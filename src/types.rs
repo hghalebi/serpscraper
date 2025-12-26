@@ -14,7 +14,7 @@ pub struct SerpResponse {
 pub struct OrganicResult {
     pub title: String,
     pub link: String,
-    pub position: u32, // Unsigned integer (positive only)
+    pub position: u32,           // Unsigned integer (positive only)
     pub snippet: Option<String>, // Option handles fields that might be null or missing
     pub displayed_link: Option<String>,
     pub source: Option<String>,
