@@ -4,7 +4,7 @@ version = "0.1.0"
 edition = "2024"
 description = "A CLI tool to fetch and convert search results into Markdown."
 license = "MIT"
-repository = "https://github.com/hamzeghalebi/kharazmi"
+repository = "https://github.com/hghalebi/serpscraper"
 keywords = ["cli", "search", "markdown", "scraper"]
 categories = ["command-line-utilities", "text-processing"]
 
