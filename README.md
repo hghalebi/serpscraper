@@ -18,6 +18,33 @@ export SERPER_API_KEY="your_secret_key"
 serpscraper "how to write better rust code"
 ```
 
+## Library Usage
+
+Add `serpscraper` to your `Cargo.toml`:
+
+```toml
+[dependencies]
+serpscraper = "0.1"
+tokio = { version = "1", features = ["full"] }
+```
+
+Use it in your Rust code:
+
+```rust
+use serpscraper::get_markdown_for_query;
+
+#[tokio::main]
+async fn main() -> anyhow::Result<()> {
+    let api_key = std::env::var("SERPER_API_KEY")?;
+    let query = "rust async tutorial";
+
+    let markdown = get_markdown_for_query(query, &api_key).await?;
+    println!("{}", markdown);
+
+    Ok(())
+}
+```
+
 ## Dependencies
 
 *   `anyhow`: Error handling.
