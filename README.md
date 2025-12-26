@@ -8,6 +8,16 @@ A CLI tool to fetch and convert search results into Markdown.
 *   **Environment Variables**:
     *   `SERPER_API_KEY`: API key for [SerpApi](https://serpapi.com/).
 
+## Usage
+
+```bash
+# Set your API key
+export SERPER_API_KEY="your_secret_key"
+
+# Run the search
+serpscraper "how to write better rust code"
+```
+
 ## Dependencies
 
 *   `anyhow`: Error handling.
